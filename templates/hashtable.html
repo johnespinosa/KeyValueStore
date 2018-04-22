@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+    <title>KVS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/brendonUrie.jpg" />
+    <link href="/static/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/HashtableInteractions.js"></script>
+</head>
+<body>
+    <h1>Key Value Store</h1>
+    <form id="UpdateHashtable" method="post" enctype="multipart/form-data">
+        <h3> Update your Hashtable with (Key, Value). </h3>
+        <fieldset>
+            Key: <input id ="UpdateKey" type="text"><br>
+            Value: <input id = "UpdateValue" type="text"><br>
+        </fieldset>
+    </form>
+    <button id = "UpdateSubmit"> submit </button>
+    <br><br><br>
+    <form id="GetValue" method="post" enctype="multipart/form-data">
+        <h3> Get the value of a key. </h3>
+        <fieldset>
+            Key: <input id ="GetKey" type="text" name="key_input"><br>
+            <br>
+        </fieldset>
+    </form>
+    <button id = "GetValueSubmit"> submit </button>
+    <br>
+    <div id = "KVResult">
+    </div>
+    <a href="/logout">Log Out</a>
+</body>
