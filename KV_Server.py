@@ -58,11 +58,11 @@ def login():
     Handle the user logging in.
     @return the html associated with a successful or unsuccessful login
     '''
-    if request.method == 'POST':
-        username_input = request.form['username_input']
-        password_input = request.form['password_input']
-        if(login_successful(username_input, password_input)):
-            session['username'] = username_input
+    
+    username_input = request.form['username_input']
+    password_input = request.form['password_input']
+    if(login_successful(username_input, password_input)):
+        session['username'] = username_input
     return redirect('/')
     
 def login_successful(username_input, password_input):
